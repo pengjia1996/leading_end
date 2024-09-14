@@ -1,0 +1,90 @@
+
+<html>
+<head>
+
+<style>
+.ellipsis{
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.outer {  
+    display: flex;  
+    flex-wrap: nowrap; /* 不换行 */  
+    overflow-x: auto; /* 水平滚动 */  
+    border: 1px solid black; /* 外部容器边框，仅用于可视化 */  
+}  
+  
+.inner {  
+	border: 1px solid red;
+    flex: 0 0 auto; /* 不放大也不缩小 */  
+    margin-right: 10px; /* 图片之间的间距 */  
+	width: 100px;
+	height: 133px;
+    /* 其他图片样式 */  
+}  
+  
+.inner:last-child {  
+    margin-right: 0; /* 最后一个图片不需要右边距 */  
+}  
+  
+.show-more {  
+    display: none; /* 初始隐藏“更多”链接 */  
+    margin-left: auto; /* 将“更多”链接推到最右边 */  
+    /* 其他样式 */  
+}
+
+.picList{
+	
+	display: flex;
+	flex-direction: row;
+}
+
+</style>
+</head>
+
+
+<body>
+		<div class="outer">  
+			<div class="picList ellipsis">
+				<div class="inner">图片1</div>  
+				<div class="inner">图片2</div>  
+				<div class="inner">图片3</div>  
+				<div class="inner">图片4</div>  
+				<div class="inner">图片5</div>
+				<div class="inner">图片6</div>  
+				<div class="inner">图片7</div>  
+				<div class="inner">图片8</div> 
+				<div class="inner">图片9</div>  
+			</div>
+			<div>
+				<div class="show-more">更多</div>  
+			</div>
+		</div>
+
+
+<body>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script>
+		$(function(){
+			console.log('-----------------------------');
+			
+			var outer = $('.outer');
+			var showMore = $('.show-more');  
+			var innerElements = $('.inner');  
+			var totalInnerWidth = 0;  
+			forEach(function(element of innerElements) {
+				totalInnerWidth += element.offsetWidth + 10; // 加上图片之间的间距  
+			});  
+			//如果总宽度大于外部容器的宽度，则显示“更多”链接
+			if (totalInnerWidth > outer.offsetWidth) {  
+				showMore.style.display = 'block';  
+			}  
+			
+		})
+		
+	</script>
+
+</html>
+

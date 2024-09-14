@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>test</title>
+<style> 
+html, body{ margin:0; height:100%; }
+#main *{
+	margin:0;
+}
+#main
+{
+	
+	display:flex;
+	width:50%;
+	height: 50%;
+	text-align:center;
+	vertical-align:middle;
+	margin-left: 25%;
+	
+}
+.class1{
+	flex:12;
+	
+	display:flex;
+	flex-direction: column;
+}
+.class2{
+	flex:4;
+	background-color:LightPink ;
+}
+.head{
+	background-color:coral;
+}
+.footer{
+ background-color:lightblue;
+}
+.head,.footer{
+	height:50px;
+	
+}
+.main{
+	flex:1;
+	display:flex;
+	
+}	
+.tree{
+	flex:4;
+	background-color:lightgreen;
+}
+.ifram{
+	flex:8;
+	background-color:LightCyan;
+}
+.tree,.ifram{ 
+	
+}		
+</style>
+</head>
+<body>
+	<div id="main">
+      <div class="class1">
+          <div class="head"> 头部</div>
+          <div class="main"> 
+              <div class="tree">左侧导航</div>
+              <div class="ifram">右侧手ifram手机页面显示</div>
+          </div>
+          <div class="footer"> 底部</div>
+	  </div>
+      <div class="class2">编辑表单</div>  
+    </div>
+</body>
+</html>

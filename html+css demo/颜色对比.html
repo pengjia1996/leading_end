@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <style>
+        .row {
+            width: 100%;
+            height: auto;
+        }
+
+        .colorList {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .colorList .item {
+            flex: 1;
+            width: 120px;
+            height: 90px;
+            line-height: 90px;
+            margin: 10px;
+            border: 1px solid red;
+        }
+
+        .dark::before {
+            content: "dark";
+        }
+
+        .light::before {
+            content: "light";
+        }
+
+        .disabled::before {
+            content: "disabled";
+        }
+
+        .base::before {
+            content: "base";
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- 这是中文 -->
+
+    <div class="row">
+
+        <div>新育蓝</div>
+
+        <div class="colorList">  
+            <div class="item" style="background: #409EFF;">  
+                <span class="base"></span>  
+                #409EFF  
+            </div>  
+            <div class="item" style="background: #2B85E4;">  
+                <span class="dark"></span>  
+                #2B85E4  
+            </div>  
+            <div class="item" style="background: #66B1FF;">  
+                <span class="light"></span>  
+                #66B1FF  
+            </div>  
+            <div class="item" style="background: #A0CFFF;">  
+                <span class="disabled"></span>  
+                #A0CFFF  
+            </div>  
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div>成功</div>
+        <div class="colorList">
+            <div class="item" style="background: #19BE6B;">
+                <span class="base"></span>
+                #19BE6B
+            </div>
+            <div class="item" style="background: #14A85A;">
+                <span class="dark"></span>
+                #14A85A
+            </div>
+            <div class="item " style="background: #26D77A;">
+                <span class="light"></span>
+                #26D77A
+            </div>
+            <div class="item " style="background: #E0F2ED;">
+                <span class="disabled"></span>
+                #E0F2ED
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div>警告</div>
+        <div class="colorList">
+            <div class="item" style="background: #FF9900;">
+                <span class="base"></span>
+                #FF9900
+            </div>
+            <div class="item" style="background: #E68A00;">
+                <span class="dark"></span>
+                #E68A00
+            </div>
+            <div class="item" style="background: #FFA533;">
+                <span class="light"></span>
+                #FFA533
+            </div>
+            <!-- 通常情况下，disabled状态的颜色会更接近灰色或更柔和，但这里我提供一个接近原色的柔和版本 -->
+            <div class="item" style="background: #FFD19A;">
+                <span class="disabled"></span>
+                #FFD19A
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div>错误</div>
+
+        <div class="colorList">
+            <div class="item" style="background: #F56C6C;">
+                <span class="base"></span>
+                #F56C6C
+            </div>
+            <div class="item" style="background: #E05959;">
+                <span class="dark"></span>
+                #E05959
+            </div>
+            <div class="item" style="background: #FF8585;">
+                <span class="light"></span>
+                #FF8585
+            </div>
+            <div class="item" style="background: #F9BABA;">
+                <span class="disabled"></span>
+                #F9BABA
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div>信息提示</div>
+
+        <div class="colorList">  
+            <div class="item" style="background: #808695;">  
+                <span class="base"></span>  
+                #808695  
+            </div>  
+            <div class="item" style="background: #666C7A;">  
+                <span class="dark"></span>  
+                #666C7A  
+            </div>  
+            <div class="item" style="background: #99A0B0;">  
+                <span class="light"></span>  
+                #99A0B0  
+            </div>  
+            <div class="item" style="background: #B3B7C2;">  
+                <span class="disabled"></span>  
+                #B3B7C2  
+            </div>  
+        </div>
+    </div>
+
+
+
+    
+
+   
+
+
+
+
+
+</body>
+
+
+</html>
