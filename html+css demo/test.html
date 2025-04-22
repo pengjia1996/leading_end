@@ -1,44 +1,46 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+
 <head>
-<meta charset="utf-8"> 
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-<title>test</title>
-<style> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>test</title>
+  <style>
+    .main {
+      width: 300px;
+      height: 500px;
+      border: 1px solid red;
+    }
 
-.main{
-  width:300px;
-  height: 500px;
-  border: 1px solid red;
-}
+    .image-container {
+      position: relative;
+      display: inline-block;
+      /* æˆ–è€…å…¶ä»–é€‚åˆä½ å¸ƒå±€çš„å®šä½æ–¹å¼ */
+    }
 
-.image-container {
-  position: relative;
-  display: inline-block; /* »òÕßÆäËûÊÊºÏÄã²¼¾ÖµÄ¶¨Î»·½Ê½ */
-}
-
-.image-container .text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: white; /* ÎÄ×ÖÑÕÉ« */
-  background-color: rgba(0, 0, 0, 0.5); /* °ëÍ¸Ã÷±³¾° */
-  padding: 5px; /* ÎÄ×ÖÖÜÎ§µÄÌî³ä */
-}
-
-</style> 
+    .image-container .text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: white;
+      /* æ–‡å­—é¢œè‰² */
+      background-color: rgba(0, 0, 0, 0.5);
+      /* åŠé€æ˜èƒŒæ™¯ */
+      padding: 5px;
+      /* æ–‡å­—å‘¨å›´çš„å¡«å…… */
+    }
+  </style>
 
 </head>
+
 <body>
-<div class="main">
-	<div class="image-container">
-    <img src="image.jpg" alt="Ê¾ÀıÍ¼Æ¬">
-    <div class="text">ÕâÀïÊÇÎÄ×Ö</div>
-  </div>
-<div>
+  <div class="main">
+    <div class="image-container">
+      <img src="image.jpg" alt="ç¤ºä¾‹å›¾ç‰‡">
+      <div class="text">è¿™é‡Œæ˜¯æ–‡å­—</div>
+    </div>
+    <div>
 
 </body>
+
 </html>
-
-
